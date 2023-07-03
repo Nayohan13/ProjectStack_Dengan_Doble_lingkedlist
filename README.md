@@ -12,6 +12,54 @@ struct node{
 };
 node *head = NULL;
 
+void push(){
+	int data;
+	cout<<"Masukkan data : ";
+	cin>>data;
+	stack[top] = data;
+	top++;
+	
+	struct node *bantu;
+	bantu = new node;
+	if(isEmpty()){
+		bantu->data = data;
+		bantu->prev = NULL;
+		bantu->next = NULL;
+		head = bantu;
+	}
+	else{
+		bantu->data = data;
+		bantu->next = head;
+		head->prev = bantu;
+		bantu->prev = NULL;
+		head = bantu;
+	}
+}
+
+void pop(){
+	if(top>0){
+		top--;
+	}
+	
+	struct node *bantu;
+	bantu = new node;
+	if(isEmpty()){
+		cout<<"Stack kosong"<<endl;
+	}
+	else if(head->next == NULL && head->prev == NULL){
+		bantu = head;
+		head = NULL;
+		delete head;
+	}
+	else{
+		bantu = head;
+		head = head->next;
+		head->prev = NULL;
+		delete bantu;
+	}
+}
+
+
 bool isEmpty(){
 	if(head == NULL){
 		return true;
