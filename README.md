@@ -12,6 +12,15 @@ struct node{
 };
 node *head = NULL;
 
+bool isEmpty(){
+	if(head == NULL){
+		return true;
+	}
+	else{
+		return false;
+	}
+}
+
 void push(){
 	int data;
 	cout<<"Masukkan data : ";
@@ -59,14 +68,8 @@ void pop(){
 	}
 }
 
-
-bool isEmpty(){
-	if(head == NULL){
-		return true;
-	}
-	else{
-		return false;
-	}
+void clear(){
+	head = NULL;
 }
 
 void print(){
