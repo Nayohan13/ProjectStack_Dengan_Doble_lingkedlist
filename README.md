@@ -69,7 +69,15 @@ bool isEmpty(){
 	}
 }
 
-
+void print(){
+       node *bantu = head;
+       cout<<"Isi stack : ";
+       while (bantu != NULL){
+              cout<<bantu->data<<" ";
+              bantu = bantu->next;
+       }
+       cout<<endl;
+}
 
 
 int main(){
