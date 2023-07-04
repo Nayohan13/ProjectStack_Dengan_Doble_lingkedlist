@@ -1,3 +1,4 @@
+//project stack kami pakkkkk
 #include<iostream>
 #include<conio.h>
 using namespace std;
@@ -105,16 +106,16 @@ int main(){
 	
 	do{
 		int pilih;
-		cout<<"======================================================"<<endl;
-       	        cout<<"    PROGRAM STACK PADA DOUBLE LINKED CIRCULAR LIST    "<<endl;
-	        cout<<"======================================================"<<endl;
-     	        cout<<"1. PUSH                                               "<<endl;
-      	        cout<<"2. POP                                                "<<endl;
-    	        cout<<"3. FULL                                               "<<endl;
-	        cout<<"4. EMPTY                                              "<<endl;
-    	        cout<<"5. CLEAR                                              "<<endl;
-    	        cout<<"6. PRINT                                              "<<endl;
-    	        cout<<"======================================================"<<endl;
+		cout<<"================================================================"<<endl;
+       	        cout<<" PROGRAM IMPLEMENTASI STACK PADA DOUBLE LINKED CIRCULAR LIST    "<<endl;
+	        cout<<"================================================================"<<endl;
+     	        cout<<" 1. PUSH                                                         "<<endl;
+      	        cout<<" 2. POP                                                          "<<endl;
+    	        cout<<" 3. FULL                                                         "<<endl;
+	        cout<<" 4. EMPTY                                                        "<<endl;
+    	        cout<<" 5. CLEAR                                                        "<<endl;
+    	        cout<<" 6. PRINT                                                        "<<endl;
+    	        cout<<"================================================================"<<endl;
 		cout<<"Masukkan nomor pilihan anda : ";
 		cin>>pilih;
 		
@@ -144,7 +145,9 @@ int main(){
 				print();
 			break;
 		}
-		
+
+  		cout<<endl<<endl;
+    		print();
 		cout<<endl;
 		cout<<"Apakah anda ingin memilih lagi (Y/T)? : ";
 		cin>>tambah;
