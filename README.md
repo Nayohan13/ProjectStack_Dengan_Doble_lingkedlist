@@ -76,13 +76,13 @@ void full(){
 	}
 }
 
-void empty() {
-    if (isEmpty()) {
-        cout << "Stack kosong" << endl;
+void empty(){
+    if(isEmpty()){
+        cout<<"Stack kosong"<<endl;
     }
-    else {
-        cout << "Stack tidak kosong" << endl;
-    }
+    else{
+        cout<<"Stack tidak kosong"<<endl;
+	}
 }
 
 void clear(){
