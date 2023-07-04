@@ -76,7 +76,14 @@ void pop(){
 		delete bantu;
 	}
 }
-
+void full(){
+	if(top >= maxstack){
+		cout<<"Stack penuh"<<endl;
+	}
+	else{
+		cout<<"Stack belum penuh"<<endl;
+	}
+}
 void clear(){
 	head = NULL;
 }
