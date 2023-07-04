@@ -75,7 +75,7 @@ void full(){
 	else{
 		cout<<"Stack belum penuh"<<endl;
 	}
-}
+} 
 
 void empty(){
     if(isEmpty()){
