@@ -21,6 +21,15 @@ bool isEmpty(){
 	}
 }
 
+void empty() {
+    if (isEmpty()) {
+        cout << "Stack kosong" << endl;
+    }
+    else {
+        cout << "Stack tidak kosong" << endl;
+    }
+}
+
 void push(){
 	int data;
 	cout<<"Masukkan data : ";
