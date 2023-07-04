@@ -1,4 +1,3 @@
-# ProjectStack_Dengan_Doble_lingkedlist
 #include<iostream>
 #include<conio.h>
 using namespace std;
@@ -19,15 +18,6 @@ bool isEmpty(){
 	else{
 		return false;
 	}
-}
-
-void empty() {
-    if (isEmpty()) {
-        cout << "Stack kosong" << endl;
-    }
-    else {
-        cout << "Stack tidak kosong" << endl;
-    }
 }
 
 void push(){
@@ -76,6 +66,7 @@ void pop(){
 		delete bantu;
 	}
 }
+
 void full(){
 	if(top >= maxstack){
 		cout<<"Stack penuh"<<endl;
@@ -84,6 +75,16 @@ void full(){
 		cout<<"Stack belum penuh"<<endl;
 	}
 }
+
+void empty() {
+    if (isEmpty()) {
+        cout << "Stack kosong" << endl;
+    }
+    else {
+        cout << "Stack tidak kosong" << endl;
+    }
+}
+
 void clear(){
 	head = NULL;
 }
